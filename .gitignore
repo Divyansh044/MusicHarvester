@@ -1,0 +1,13 @@
+# Ignore all .env files (environment variables)
+.env
+# Ignore virtual environment
+venv/
+Sspotipy/venv/
+
+# Ignore FFmpeg folder (large, should not be in Git)
+Sspotipy/ffmpeg-master-latest-win64-gpl-shared/
+
+# Ignore Python cache and Spotify cache
+*.cache
+__pycache__/
+Sspotipy/.cache/
