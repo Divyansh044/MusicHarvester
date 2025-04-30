@@ -20,8 +20,9 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SESSION_SECRET", os.urandom(24))
-CORS(app, resources={r"/*": {"origins": "*"}})
+origins = os.getenv("ALLOWED_ORIGINS", "").split(",")
 
+CORS(app, resources={r"/*": {"origins": origins}})
 # Constants
 SPOTIFY_REDIRECT_URI = os.environ.get('SPOTIFY_REDIRECT_URI')
 YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY')
