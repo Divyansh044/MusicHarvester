@@ -316,7 +316,7 @@ def download_audio(video_url, output_directory, filename_prefix):
         ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': output_path,
-            'ffmpeg_location': r'E:\MusicHarvester\Sspotipy\ffmpeg-master-latest-win64-gpl-shared\ffmpeg-master-latest-win64-gpl-shared\bin', 
+            'ffmpeg_location': r'ffmpeg-master-latest-win64-gpl-shared\ffmpeg-master-latest-win64-gpl-shared\bin', 
             'postprocessors': [
                 {
                     'key': 'FFmpegExtractAudio',
