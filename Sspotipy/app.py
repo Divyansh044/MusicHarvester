@@ -316,7 +316,6 @@ def download_audio(video_url, output_directory, filename_prefix):
         ydl_opts = {
             'format': 'bestaudio/best',
             'outtmpl': output_path,
-            'ffmpeg_location': 'ffmpeg', 
             'postprocessors': [
                 {
                     'key': 'FFmpegExtractAudio',
